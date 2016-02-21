@@ -19,7 +19,9 @@ platform = Gitana.connect({
     "clientSecret": clientSecret,
     "username": username,
     "password": password,
-    "baseURL": "https://api.cloudcms.com"
+    "baseURL": "https://api.cloudcms.com",
+    "application": applicationId
+
 }).then(function () {
 	alert("con done");
 });
