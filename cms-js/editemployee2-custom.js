@@ -19,7 +19,7 @@ function getdataforedit() {
             $('#gender').val(employee[i].gender);
             $('#bright-coveid').val(employee[i].brightcoveid);
             var url = "";
-            url = "https://aonhewitt.cloudcms.net/proxy" + employee[i].url + "/attachments/"
+            url = "https://aonhewitt.cloudcms.net/proxy" + employee[i].url + "/attachments/undefined"
             $('#profileimageedit').attr('src', url);
             var al = $('#brightcove-id').val
         }
