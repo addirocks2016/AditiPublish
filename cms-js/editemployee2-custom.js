@@ -21,7 +21,7 @@ function getdataforedit() {
             var url = "";
             url = "https://aonhewitt.cloudcms.net/proxy" + employee[i].url + "/attachments/undefined"
             $('#profileimageedit').attr('src', url);
-            var al = $('#bright-coveid').val
+            var al = $('#brightcove-id').val
         }
 
     }
@@ -86,7 +86,7 @@ function saveeditprofile() {
                 this.name = $('#emp-name').val();
                 this.gender = $('#gender').val();
                 this.country = "country";
-                this.brightcoveid = $('#bright-coveid').val();
+                this.brightcoveid = $('#brightcove-id').val();
                 this.update();
                 var newCommentId = this.getId();
                 console.log(newCommentId);
@@ -122,7 +122,7 @@ function addlabel() {
             alert("Video ID limit Exceed");
             $('#add-btn').hide();
         }
-        var textboxdata = $('#bright-coveid').val();
+        var textboxdata = $('#brightcove-id').val();
         var labeldata = "";
         if (xat == "" || xat == null) {
             var i = 1;
