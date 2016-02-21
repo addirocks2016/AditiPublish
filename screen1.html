@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>AON</title>
+<!-- Bootstrap core CSS -->
+<link href="assest/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/inc-nav-mobile.css" rel="stylesheet">
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]>
+                                        <script src="../../assets/js/ie8-responsive-file-warning.js"></script>
+                                        <![endif]-->
+<script src="assest/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+                                        <script src="assest/js/html5shiv.min.js"></script>
+                                        <script src="assest/js/respond.min.js"></script>
+                                        <![endif]-->
+</head>
+<body>
+<header id="header">
+</header>
+<div class="clearfix"></div>
+<div class="container padding-zero">
+<maincontent>
+<loginpanel>
+<div class="login-page">
+  <label style="max-width: 360px; margin: 0 auto 30px; font-size:24px; display:none;" id="display">You have been logged out.</label>
+  <div class="form">
+
+    <form  class="login-form" method="post">
+    <label>Administrator Login</label>
+    <input name="text" type="text" placeholder="Username" id="Username" />
+    <input type="password" placeholder="Password" id="Password"/>
+      <a class="button_custom" onclick="login(this.form);"><strong>Enter</strong>
+      </a>
+    </form>
+    
+</div>
+</loginpanel>
+</maincontent>
+  <div id="copyright"></div>
+</div>
+<script type="text/javascript" src="assest/js/jquery.min.js"></script>
+<script type="text/javascript" src="assest/js/nav.js"></script>
+<script type="text/javascript" src="assest/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assest/js/docs.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="assest/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="assest/ga/google-analytics.js"></script>
+<script type="text/javascript" src="assest/js/event-tracking.js"></script>
+<script type="text/javascript" src="assest/js/event-tracking.js"></script>
+<script type="text/javascript" src="cms-js/gitana.min.js"></script>
+<script type="text/javascript" src="cms-js/cloudcms-custom.js"></script>
+<script type="text/javascript" src="cms-js/custom.js"></script>
+<script>
+
+
+var usernameGet=sessionStorage.getItem('username');
+var passwordGet = sessionStorage.getItem('password');
+if(usernameGet && passwordGet){
+document.getElementById('Username').value = usernameGet;
+document.getElementById('Password').value = passwordGet;
+}
+else{
+	document.getElementById('display').style.display = "block";
+}
+</script>
+</body>
+</html>
