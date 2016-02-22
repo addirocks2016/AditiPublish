@@ -26,5 +26,6 @@ platform = Gitana.connect({
     "storage":
 
 }).then(function () {
-	alert("con done");
+   this= platform.createRepository().readBranch("branchId").createNode({"title": "AditiPlublishProjectTitle"});
+    
 });
