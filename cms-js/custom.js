@@ -21,5 +21,5 @@ else{
 function logout(){
 	sessionStorage.removeItem('username');
 	sessionStorage.removeItem('password');
-	window.location.replace("screen1.html");
+	window.location.replace("logout.html");
 }
