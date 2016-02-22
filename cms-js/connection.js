@@ -6,7 +6,6 @@ var applicationId = "8428b6fe9176f694a8e5";
 talentwebsite:
 var repositoryId = '4453eed66766d424b14e';
 var branchId = '58be9297f2c3838bd487';
-var sessionStorage = "GITANA_TICKET" ;
 var repository;
 var branch;
 var newCommentId;
