@@ -6,6 +6,7 @@ var applicationId = "8428b6fe9176f694a8e5";
 talentwebsite:
 var repositoryId = '4453eed66766d424b14e';
 var branchId = '58be9297f2c3838bd487';
+var sessionStorage = "GITANA_TICKET" ;
 var repository;
 var branch;
 var newCommentId;
@@ -14,13 +15,15 @@ var nodes = [];
 var profile = [];
 var length1 = 0;
 var allReleaseObjects = [];
+
 platform = Gitana.connect({
     "clientKey": clientKey,
     "clientSecret": clientSecret,
     "username": username,
     "password": password,
-    "baseURL": "https://api.cloudcms.com",
-    "application": applicationId
+    "baseURL": "https://api.cloudcms.com/proxy",
+    "application": applicationId,
+    "storage":
 
 }).then(function () {
 	alert("con done");
