@@ -21,8 +21,7 @@ platform = Gitana.connect({
     "username": username,
     "password": password,
     "baseURL": "https://api.cloudcms.com/proxy",
-    "application": applicationId,
-    "storage":
+    "application": applicationId
 
 }).then(function () {
     alert('con done 1');
