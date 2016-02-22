@@ -32,12 +32,13 @@
 <maincontent>
 <loginpanel>
 <div class="login-page">
-  <div class="form">
-    <form  class="login-form">
+ <div class="form">
+    <form  class="login-form" method="post">
     <label>Administrator Login</label>
-      <input id="username" type="text" placeholder="Username"/>
-      <input id="password" type="password" placeholder="Password"/>
-      <button id="login-btn"><strong>Enter</strong></button>
+    <input name="text" type="text" placeholder="Username" id="Username" />
+    <input type="password" placeholder="Password" id="Password"/>
+      <a class="button_custom" onclick="login(this.form);"><strong>Enter</strong>
+      </a>
     </form>
   </div>
 </div>
