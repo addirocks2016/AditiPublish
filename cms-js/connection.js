@@ -14,18 +14,12 @@ var nodes = [];
 var profile = [];
 var length1 = 0;
 var allReleaseObjects = [];
-
 platform = Gitana.connect({
     "clientKey": clientKey,
     "clientSecret": clientSecret,
     "username": username,
     "password": password,
-    "baseURL": "https://api.cloudcms.com/proxy",
-    "application": applicationId
-
+    "baseURL": "https://api.cloudcms.com"
 }).then(function () {
-    alert('con done 1');
-   //this= platform.createRepository().readBranch("branchId").createNode({"title": "AditiPlublishProjectTitle"});
-alert('con done');
-    
+	alert("con done");
 });
